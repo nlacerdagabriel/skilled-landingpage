@@ -13,30 +13,30 @@ export const theme = {
     fonts: {
       heading: {
         xl: {
-          size: "56px",
-          line_height: "70px",
+          size: "3.5rem",
+          line_height: "4.75rem",
         },
         l: {
-          size: "40px",
-          line_height: "51px",
+          size: "2.5rem",
+          line_height: "3.1rem",
         },
         m: {
-          size: "32px",
-          line_height: "40px",
+          size: "2rem",
+          line_height: "2.5rem",
         },
         s: {
-          size: "24px",
-          line_height: "28px",
+          size: "1.5rem",
+          line_height: "1.75rem",
         },
       },
       body: {
         m: {
-          size: "18px",
-          line_height: "28px",
+          size: "1.1rem",
+          line_height: "1.75rem",
         },
         s: {
-          size: "16px",
-          line_height: "28px",
+          size: "1rem",
+          line_height: "75rem",
         },
       },
     },

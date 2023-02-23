@@ -4,6 +4,7 @@ import { theme } from "../../theme";
 export const Container = styled.footer`
   background-color: ${theme.colors.secondary};
 
+  padding: 0 2rem;
   
 
   & > div{

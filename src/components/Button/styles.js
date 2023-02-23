@@ -17,4 +17,10 @@ export const Container = styled.button`
       : `background-color: ${props.backgroundColor};`}
 
   color: ${theme.colors.white};
+
+    transition: 0.3s;
+
+  &:hover{
+    opacity: 0.5;
+  }
 `;

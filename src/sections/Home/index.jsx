@@ -2,8 +2,21 @@ import { theme } from "../../theme";
 import { Container, HeroText } from "./styles";
 import { Button } from "../../components/Button";
 import HeroImageDesktop from "../../assets/hero-image-desktop.png";
+import HeroImageTablet from "../../assets/hero-image-tablet.png";
+import HeroImageMobile from "../../assets/hero-image-mobile.png";
+import { useEffect, useState } from "react";
 
 export const Home = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <Container>
       <HeroText>
@@ -19,7 +32,9 @@ export const Home = () => {
         </Button>
       </HeroText>
 
-      <img src={HeroImageDesktop} />
+        {width > 1120 && <img src={HeroImageDesktop} />}
+        {width > 768 && width <= 1120 && <img src={HeroImageTablet} />}
+        {width <= 768 && <img src={HeroImageMobile} />}
     </Container>
   );
 };

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { theme } from "../../theme";
 
 export const Container = styled.div`
-  width: 350px;
   height: 350px;
 
   padding: 4rem 2rem 2.5rem 2rem;
@@ -13,6 +12,10 @@ export const Container = styled.div`
   position: relative;
 
   box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+
+  @media (max-width: 992px) {
+    height: initial;
+  }
 
   & > div {
     position: absolute;
@@ -49,6 +52,12 @@ export const Container = styled.div`
     cursor: pointer;
 
     color: ${theme.colors.primary};
+
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   div {
@@ -61,11 +70,5 @@ export const Container = styled.div`
     border-radius: 99px;
 
     background-image: ${theme.colors.primary_gradient};
-
-    svg {
-      height: 25px;
-      width: 25px;
-      color: ${theme.colors.white};
-    }
   }
 `;
