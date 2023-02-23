@@ -10,7 +10,7 @@ export const Header = () => {
             <nav>
                 <ul>
                     <li><img src={LogoDark} alt="logo" /></li>
-                    <li><Button backgroundColor={theme.colors.primary}/></li>
+                    <li><Button backgroundColor={theme.colors.secondary}/></li>
                 </ul>
             </nav>
         </Container>

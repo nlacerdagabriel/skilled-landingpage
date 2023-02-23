@@ -1,19 +1,19 @@
 export const theme = {
   colors: {
-    primary: "#13183F",
-    secondary: "#F74780",
+    primary: "#F74780",
+    secondary: "#13183F",
     text: "#83869A",
     white: "#FFFF",
     primary_gradient:
-      " linear-gradient(360deg, rgba(240,42,166,1) 0%, rgba(255,111,72,1) 85%)",
+      " linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)",
     secondary_gradient:
-      "linear-gradient(360deg, rgba(240,42,166,1) 0%, rgba(72,81,255,1) 85%)",
+      " linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%)",
   },
   size: {
     fonts: {
       heading: {
         xl: {
-          size: "50px",
+          size: "56px",
           line_height: "70px",
         },
         l: {

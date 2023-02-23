@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from "../theme";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -21,6 +22,8 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         
         background-position: center;
+        color: ${theme.colors.secondary};
+        font-family: 'Plus Jakarta Sans', sans-serif;
 
     }
 
